@@ -14,7 +14,7 @@ class alsabaahnews(scrapy.Spider):
             'date':news.css('div.Toplist div.created-date::text').get(),
             'description':news.css('div.introtext::text').get()}
 !scrapy crawl sabahnews -o data.json
-Out put 
+//Output 
 /*
 2024-02-18 10:46:58 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: sabahnews)
 2024-02-18 10:46:58 [scrapy.utils.log] INFO: Versions: lxml 4.9.4.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 23.10.0, Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0], pyOpenSSL 24.0.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.2, Platform Linux-6.1.58+-x86_64-with-glibc2.35
